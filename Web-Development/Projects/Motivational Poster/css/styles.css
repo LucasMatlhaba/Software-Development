@@ -1,0 +1,20 @@
+div{
+    margin: 500px;
+    background-color: black;
+    
+}
+img{
+    border: 5px solid white;
+}
+h1{
+    color: white;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+p{
+    color: white;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: italic;
+}
