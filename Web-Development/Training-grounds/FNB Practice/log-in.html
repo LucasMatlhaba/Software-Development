@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylehseet" href="styling.css">
+</head>
+<body>
+    <!-- Creating a log-in form-->
+     <form>
+        <label for="usernameInput">Username</label> <input type="text" id="usernameInput">
+        <label for="passwordInput">Password</label> <input type="password" id="passwordInput">
+
+        <p id="message"></p>
+        <br/><br/>
+
+        <a href="#" onclick="verifyUser()">Log in</a>
+     </form>
+
+     <script>
+
+        function verifyUser(){
+            var username = document.getElementById("usernameInput").value;
+            var password = document.getElementById("passwordInput").value;
+
+            checkUserCreds(username, password);
+        }
+
+        function checkUserCreds(username, password){
+            var systemUsername = "Bond";
+            var systemPassword = "007";
+
+        if (username == systemUsername && password == systemPassword){
+
+            document.getElementById("message").innerHTML = "Welcome!";
+        
+        }else{
+            document.getElementById("message").innerHTML = "fuck-offf!!"
+        }
+    }
+     </script>
+
+</body>
+</html>
